@@ -1,8 +1,0 @@
-CHANGE LOG
-
-1.08
-kinem_cat
-- Added functionality to adjust bins per task (such as adjusting for height for flat and ladder)
-- Added statistics to output
-kinem_cat_coords
-- No change 
