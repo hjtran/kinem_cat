@@ -1,0 +1,48 @@
+CHANGE LOG
+
+1.08 - Updated by Joey Tran
+kinem_cat
+- Added functionality to adjust bins per task (such as adjusting for height for flat and ladder)
+- Added statistics to output
+kinem_cat_coords
+- No change 
+
+2.00 MAJOR UPDATE - Updated by Joey Tran
+General
+Added GUI to streamline analysis process
+kinem_cat
+- Added functionality to interpolate for 1-2 bad bins and separate bad rounds  
+- Added functionality to compare two different tasks and look and statistical significance 
+kinem_cat_coords
+- Added functionality to compare two different tasks and look for statistical significance  
+- Looking at different tasks outputs to two different output text files  
+
+2.01
+- Changed fillgaps into two different functions, one for the general data and one for the specific 
+file data. General data has a median filter with that takes out anything that spikes
+more than 1% of median since general the x changes very small per second.
+- Changed GUI to save edit8 and edit9, otherwise task 1 and task 2 for the 
+bin_gui
+
+2.02
+- Fixed a bug that would run bin analysis always with Px and ignore parameter choice of GUI
+- Added total stride length for coordinaet analysis
+- Added a fillgaps filter under a new component function file called 'fillgaps_alldata'. Allows specific range filter
+- Added lines of code to reset path on every run
+
+2.03
+- Added multiple analysis functionality
+
+2.04
+- Commented more for the code
+- Added an additional component to binfilter that allows for close to zero bins without filtering everything as a bad round.
+- Added code to bypass rounds with no steps for whatever reason
+- Coord GUI now saves previous inputs
+
+2.05
+- Fixed big bug that limited how many steps were output from coord program
+- Added functionality to adjust z values based on floor LEDs
+
+
+NEED TO DO'S
+- Edit fillgap functionaliy to work regardless of sign
